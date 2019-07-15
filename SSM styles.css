@@ -1,0 +1,45 @@
+* {background-color: blueviolet; padding: 0; margin: 0;} /* this applies 0 margin and padding to everything*/
+
+canvas {background: #ffffff; display:bloc; margin: 0 auto;} /*this is the canvas*/
+
+p {color: white; font-family: Arial, Helvetica, sans-serif; font-size: 20px}
+
+.allButtons{
+    opacity: 0.9;
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: hotpink;  
+}
+
+.allButtons:hover{
+    color: 	#FF1493;
+}
+
+.allButtons:active{
+opacity:1;
+}
+
+.slider{ /* The slider itself */
+    -webkit-appearance: none;
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;   
+    background: white;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb{ /* The slider handle, we use webkit to override the default look */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;  /*this makes the border rounded */
+    background: hotpink;
+    cursor: pointer;
+}

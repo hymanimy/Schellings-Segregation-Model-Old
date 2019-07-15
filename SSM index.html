@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/> <!-- this says we use utf 8 as the documents character set-->
+        <title>Attempt at Schelling's segregation model</title>
+        <link rel="stylesheet" type="text/css" href="SSM styles.css">
+    </head>
+    <body>
+        <div id = "buttons">
+            <button class = "allButtons" type = "button" onclick = "start();">START</button> <!-- this starts the movements of cells-->
+
+            <button class = "allButtons" type = "button" onclick = "reset();">RESET</button> <!-- this resets population but is only able to be done once rounds are done-->
+            
+            <button class = "allButtons" type = "button" onclick = "stop ();" value = "stop" >STOP</button>
+
+        </div>
+        
+        <canvas id="mycanvas" width ="1600" height="800"></canvas> <!--w480 and h320 originally-->
+        
+        <div id="satisfactionSlider">    
+            <p id ="satisfaction meter" >Percentage of satisfaction: </p>
+            <p id = "sliderPercentage">50%</p>
+            <input min = "1" max = "100" type = "range" value = "50" class ="slider" id = "satisfactionRange">
+        </div>
+
+        <div id="PopulationSlider">    
+            <p id ="Populationmeter" >Red:Blue Ratio </p>
+            <p id = "populationPercentage">50:50</p>
+            <input min = "0" max = "100" type = "range" value = "50" class ="slider" id = "populationRange">
+        </div>
+
+        <script src="SSM app.js"></script> <!-- this links to my js file -->
+        
+    </body>
+</html>
